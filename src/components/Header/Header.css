@@ -5,7 +5,8 @@
 } */
 
 .h-wrapper {
-  background: var(--black);
+  /* background: var(--black); */
+  background-color: white;
 }
 
 .h-container {
