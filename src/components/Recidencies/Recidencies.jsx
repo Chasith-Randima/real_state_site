@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "./Recidencies.css";
 import data from "../../utils/slider.json";
+import { sliderSettings } from "../../utils/common";
 
 const Recidencies = () => {
   return (
@@ -12,10 +13,19 @@ const Recidencies = () => {
             <span className="orangeText">Best Choices</span>
             <span className="primaryText">Popular Recidencies</span>
           </div>
-          <Swiper>
+
+          <Swiper {...sliderSettings}>
             {data.map((card, i) => (
               <SwiperSlide key={i}>
-                <div className="r-card"></div>
+                <div className="flexColStart r-card">
+                  <img src={card.image} alt="home" />
+                  <span className="secondaryText r-price">
+                    <span style={{ color: "orange" }}>$</span>{" "}
+                    <span>{card.price}</span>
+                  </span>
+                  <span className="primaryText">{card.name}</span>
+                  <span className="secondaryText">{card.detail}</span>
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
