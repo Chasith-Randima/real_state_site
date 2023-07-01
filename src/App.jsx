@@ -3,6 +3,7 @@ import Hero from "./components/Hero/Hero";
 import "./App.css";
 import Companies from "./components/Companies/Companies";
 import Recidencies from "./components/Recidencies/Recidencies";
+import Value from "./components/Value/Value";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         </div>
         <Companies />
         <Recidencies />
+        <Value />
       </div>
     </>
   );
