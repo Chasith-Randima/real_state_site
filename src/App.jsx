@@ -4,6 +4,7 @@ import "./App.css";
 import Companies from "./components/Companies/Companies";
 import Recidencies from "./components/Recidencies/Recidencies";
 import Value from "./components/Value/Value";
+import Contact from "./components/Contact/Contact";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Companies />
         <Recidencies />
         <Value />
+        <Contact />
       </div>
     </>
   );
