@@ -5,6 +5,7 @@ import Companies from "./components/Companies/Companies";
 import Recidencies from "./components/Recidencies/Recidencies";
 import Value from "./components/Value/Value";
 import Contact from "./components/Contact/Contact";
+import GetStarted from "./components/GetStarted/GetStarted";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Recidencies />
         <Value />
         <Contact />
+        <GetStarted />
       </div>
     </>
   );
